@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'Reactions'
+  s.name             = 'TchopReactions'
   s.version          = '2.1.0'
   s.license          = 'MIT'
   s.summary          = 'Fully customizable Facebook reactions control'
