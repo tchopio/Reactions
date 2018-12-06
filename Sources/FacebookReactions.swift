@@ -31,7 +31,7 @@ extension Reaction {
   /// Struct which defines the standard facebook reactions.
   public struct facebook {
     
-    /// Unselected - "like" reaction.
+    /// Default for unselected "like" button, ignored in .all
     public static var likeTemplate: Reaction {
         return reactionWithId("like-template")
     }
@@ -67,7 +67,7 @@ extension Reaction {
     }
 
     /// The list of standard facebook reactions in this order: `.like`, `.love`, `.haha`, `.wow`, `.sad`, `.angry`.
-    public static let all: [Reaction] = [facebook.likeTemplate, facebook.like, facebook.love, facebook.haha, facebook.wow, facebook.sad, facebook.angry]
+    public static let all: [Reaction] = [facebook.like, facebook.love, facebook.haha, facebook.wow, facebook.sad, facebook.angry]
 
     // MARK: - Convenience Methods
 
