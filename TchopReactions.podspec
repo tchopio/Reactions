@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/yannickl/Reactions'
   s.authors          = { 'Yannick Loriot' => 'contact@yannickloriot.com' }
   s.social_media_url = 'https://twitter.com/yannickloriot'
-  s.source           = { :git => 'https://github.com/yannickl/Reactions.git', :tag => s.version }
+  s.source           = { :git => 'git@github.com:tchopio/Reactions.git', :branch => 'tchopCustom/v2.1.0_Swift4.0' }
 
   s.ios.deployment_target = '8.0'
   s.ios.framework         = 'UIKit'
