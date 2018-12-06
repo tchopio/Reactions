@@ -63,7 +63,7 @@ public final class ReactionButton: UIReactionControl {
    
    The reaction `title` fills the button one, and the `alternativeIcon` is used to display the icon. If the `alternativeIcon` is nil, the `icon` is used instead.
    */
-  public var reaction = Reaction.facebook.like {
+  public var reaction = Reaction.facebook.likeTemplate {
     didSet { update() }
   }
 
@@ -133,10 +133,13 @@ public final class ReactionButton: UIReactionControl {
     iconImageView.frame = iconFrame
     titleLabel.frame    = titleFrame
 
-    UIView.transition(with: titleLabel, duration: 0.15, options: .transitionCrossDissolve, animations: { [unowned self] in
-      self.iconImageView.tintColor = self.isSelected ? self.reaction.color : self.config.neutralTintColor
-      self.titleLabel.textColor    = self.isSelected ? self.reaction.color : self.config.neutralTintColor
-      }, completion: nil)
+//    UIView.transition(with: titleLabel, duration: 0.15, options: .transitionCrossDissolve, animations: { [unowned self] in
+//      self.iconImageView.tintColor = self.reaction.color : self.config.neutralTintColor
+//      self.titleLabel.textColor    = self.reaction.color : self.config.neutralTintColor
+//      }, completion: nil)
+    
+    self.iconImageView.tintColor = self.reaction.color
+    self.titleLabel.textColor    = self.reaction.color
   }
 
   // MARK: - Responding to Gesture Events
@@ -191,14 +194,14 @@ public final class ReactionButton: UIReactionControl {
   @objc func reactionSelectorTouchedUpInsideAction(_ sender: ReactionSelector) {
     guard let selectedReaction = sender.selectedReaction else { return }
 
-    let isReactionChanged = reaction != selectedReaction || !isSelected
+//    let isReactionChanged = reaction != selectedReaction || !isSelected
 
     reaction   = selectedReaction
     isSelected = true
 
-    if isReactionChanged {
-      sendActions(for: .valueChanged)
-    }
+//    if isReactionChanged {
+      sendActions(for: .valueChanged) // even if new raction is same
+//    }
 
     dismissReactionSelector()
   }
