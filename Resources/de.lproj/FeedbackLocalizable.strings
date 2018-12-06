@@ -24,20 +24,11 @@
  *
  */
 
-/** Like reaction. */
-"like" = "J'aime";
+/** The "Slide finger across" feedback. */
+"feedback.slideFingerAcross" = "Slide finger across";
 
-/** Love reaction. */
-"love" = "J'adore";
+/** The "Release to cancel" feedback. */
+"feedback.releaseToCancel" = "Release to cancel";
 
-/** Haha reaction. */
-"haha" = "Haha";
-
-/** Wow reaction. */
-"wow" = "Wouah";
-
-/** Sad reaction. */
-"sad" = "Triste";
-
-/** Angry reaction. */
-"angry" = "Grrr";
+/** The "Tap to select a reaction" feedback. */
+"feedback.tapToSelectAReaction" = "Tap to select a reaction";

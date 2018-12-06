@@ -25,10 +25,10 @@
  */
 
 /** The "Slide finger across" feedback. */
-"feedback.slideFingerAcross" = "Balayez avec votre doigt";
+"feedback.slideFingerAcross" = "Slide finger across";
 
 /** The "Release to cancel" feedback. */
-"feedback.releaseToCancel" = "Relâcher pour annuler";
+"feedback.releaseToCancel" = "Release to cancel";
 
 /** The "Tap to select a reaction" feedback. */
-"feedback.tapToSelectAReaction" = "Toucher pour sélectionner une réaction";
+"feedback.tapToSelectAReaction" = "Tap to select a reaction";

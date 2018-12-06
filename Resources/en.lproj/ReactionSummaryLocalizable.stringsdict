@@ -37,7 +37,7 @@
         <key>NSStringFormatValueTypeKey</key>
         <string>d</string>
         <key>zero</key>
-        <string>Aucune réaction</string>
+        <string>No reaction</string>
         <key>other</key>
         <string>%d</string>
       </dict>
@@ -53,11 +53,11 @@
         <key>NSStringFormatValueTypeKey</key>
         <string>d</string>
         <key>zero</key>
-        <string>Vous</string>
+        <string>You</string>
         <key>one</key>
-        <string>1 autre personne et vous</string>
+        <string>You and 1 other</string>
         <key>other</key>
-        <string>%d autres personnes et vous</string>
+        <string>You and %d others</string>
       </dict>
     </dict>
   </dict>

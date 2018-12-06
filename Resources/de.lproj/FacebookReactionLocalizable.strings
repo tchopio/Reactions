@@ -25,7 +25,7 @@
  */
 
 /** Like reaction. */
-"like" = "You like";
+"like" = "Gefällt mir";
 
 /** Love reaction. */
 "love" = "Love";
@@ -37,7 +37,7 @@
 "wow" = "Wow";
 
 /** Sad reaction. */
-"sad" = "Sad";
+"sad" = "Traurig";
 
 /** Angry reaction. */
-"angry" = "Angry";
+"angry" = "Wütend";

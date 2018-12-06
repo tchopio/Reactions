@@ -23,21 +23,3 @@
  * THE SOFTWARE.
  *
  */
-
-/** Like reaction. */
-"like" = "You like";
-
-/** Love reaction. */
-"love" = "Love";
-
-/** Haha reaction. */
-"haha" = "Haha";
-
-/** Wow reaction. */
-"wow" = "Wow";
-
-/** Sad reaction. */
-"sad" = "Sad";
-
-/** Angry reaction. */
-"angry" = "Angry";
