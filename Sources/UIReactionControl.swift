@@ -35,6 +35,9 @@ import UIKit
  You should override these methods if you subclass the `UIReactionControl`.
  */
 public class UIReactionControl: UIControl {
+    
+    public var touchAreaEdgeInsets: UIEdgeInsets = .zero
+    
   // MARK: - Initializing a ReactionSelect Object
 
   /// Initializes and returns a newly allocated view object with the specified frame rectangle.
@@ -85,4 +88,13 @@ public class UIReactionControl: UIControl {
 
   /// Update the state and layout the view hierarchy
   func update() {}
+    
+    open override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        if UIEdgeInsetsEqualToEdgeInsets(self.touchAreaEdgeInsets, .zero) || !self.isEnabled || self.isHidden {
+            return super.point(inside: point, with: event)
+        }
+        let relativeFrame = self.bounds
+        let hitFrame = UIEdgeInsetsInsetRect(relativeFrame, self.touchAreaEdgeInsets)
+        return hitFrame.contains(point)
+    }
 }
