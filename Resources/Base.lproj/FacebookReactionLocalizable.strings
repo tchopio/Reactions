@@ -27,7 +27,7 @@
 "like-template" = "You like";
 
 /** Like reaction. */
-"like" = "You like";
+"like" = "Like";
 
 /** Love reaction. */
 "love" = "Love";
