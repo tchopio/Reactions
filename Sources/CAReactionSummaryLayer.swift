@@ -60,7 +60,7 @@ final class CAReactionSummaryLayer: CALayer {
         iconLayer.contents      = $0.0.icon.cgImage
         iconLayer.masksToBounds = true
         iconLayer.borderColor   = UIColor.white.cgColor
-        iconLayer.borderWidth   = 2
+        iconLayer.borderWidth   = 0.5
         iconLayer.contentsScale = UIScreen.main.scale
 
         let textLayer           = CATextLayer()
@@ -118,9 +118,12 @@ final class CAReactionSummaryLayer: CALayer {
       textFrame.origin.x = bounds.width - textFrame.origin.x - rect.width
       iconFrame.origin.x = bounds.width - iconFrame.origin.x - rect.width + textFrame.width
     }
-
-    iconLayer.frame        = iconFrame
-    iconLayer.cornerRadius = iconFrame.height / 2
+    
+    iconLayer.frame        = CGRect(x: iconFrame.origin.x,
+                                    y: iconFrame.origin.y,
+                                    width: iconFrame.size.width + iconLayer.borderWidth, 
+                                    height: iconFrame.size.height + iconLayer.borderWidth)
+    iconLayer.cornerRadius = iconLayer.frame.height / 2
 
     textLayer.frame = textFrame
     textLayer.layoutWithConfig(config)
