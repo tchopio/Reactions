@@ -94,7 +94,7 @@ public class UIReactionControl: UIControl {
             return super.point(inside: point, with: event)
         }
         let relativeFrame = self.bounds
-        let hitFrame = UIEdgeInsetsInsetRect(relativeFrame, self.touchAreaEdgeInsets)
+        let hitFrame = relativeFrame.inset(by: self.touchAreaEdgeInsets) //UIEdgeInsetsInsetRect(relativeFrame, self.touchAreaEdgeInsets)
         return hitFrame.contains(point)
     }
 }

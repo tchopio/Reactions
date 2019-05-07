@@ -124,6 +124,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4521C985228199DD00A30139 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FeedbackLocalizable.strings; sourceTree = "<group>"; };
+		4521C986228199E700A30139 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FacebookReactionLocalizable.strings; sourceTree = "<group>"; };
+		4521C987228199EB00A30139 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ReactionSummaryLocalizable.strings; sourceTree = "<group>"; };
+		4521C988228199F100A30139 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/ReactionSummaryLocalizable.stringsdict; sourceTree = "<group>"; };
 		CE0385E91DAA51FC00D7F482 /* UIReactionControlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIReactionControlTests.swift; sourceTree = "<group>"; };
 		CE0385F01DAA560F00D7F482 /* UIReactionControlTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIReactionControlTest.xib; sourceTree = "<group>"; };
 		CE0386071DAA8C7B00D7F482 /* ReactionFeedbackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionFeedbackTests.swift; sourceTree = "<group>"; };
@@ -131,9 +135,7 @@
 		CE03860B1DAAA63F00D7F482 /* ReactionSelectorConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionSelectorConfigTests.swift; sourceTree = "<group>"; };
 		CE225E501DB1611700C21D8D /* CAReactionSummaryLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAReactionSummaryLayer.swift; sourceTree = "<group>"; };
 		CE6C88151DD1DD6F00ED6864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/ReactionSummaryLocalizable.strings; sourceTree = "<group>"; };
-		CE6C88171DD1DD7100ED6864 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/ReactionSummaryLocalizable.strings; sourceTree = "<group>"; };
 		CE6C881B1DD1DD7500ED6864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/ReactionSummaryLocalizable.stringsdict; sourceTree = "<group>"; };
-		CE6C881D1DD1DD7600ED6864 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/ReactionSummaryLocalizable.stringsdict; sourceTree = "<group>"; };
 		CE83F88A1DA8F033000943AB /* Reactions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reactions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE83F88C1DA8F033000943AB /* Reactions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reactions.h; sourceTree = "<group>"; };
 		CE83F88D1DA8F033000943AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,8 +170,6 @@
 		CED9D9581DA82C6700A70C2D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CED9D95B1DA835DB00A70C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/FeedbackLocalizable.strings; sourceTree = "<group>"; };
 		CED9D95E1DA835DF00A70C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/FacebookReactionLocalizable.strings; sourceTree = "<group>"; };
-		CED9D9601DA8364D00A70C2D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/FeedbackLocalizable.strings; sourceTree = "<group>"; };
-		CED9D9611DA8364D00A70C2D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/FacebookReactionLocalizable.strings; sourceTree = "<group>"; };
 		CEDBA12F1DACEC0D0031AB42 /* ReactionSummaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionSummaryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -418,6 +418,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				fr,
@@ -580,7 +581,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE6C88151DD1DD6F00ED6864 /* Base */,
-				CE6C88171DD1DD7100ED6864 /* fr */,
+				4521C987228199EB00A30139 /* en */,
 			);
 			name = ReactionSummaryLocalizable.strings;
 			sourceTree = "<group>";
@@ -589,7 +590,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE6C881B1DD1DD7500ED6864 /* Base */,
-				CE6C881D1DD1DD7600ED6864 /* fr */,
+				4521C988228199F100A30139 /* en */,
 			);
 			name = ReactionSummaryLocalizable.stringsdict;
 			sourceTree = "<group>";
@@ -614,7 +615,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CED9D95B1DA835DB00A70C2D /* Base */,
-				CED9D9601DA8364D00A70C2D /* fr */,
+				4521C985228199DD00A30139 /* en */,
 			);
 			name = FeedbackLocalizable.strings;
 			sourceTree = "<group>";
@@ -623,7 +624,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CED9D95E1DA835DF00A70C2D /* Base */,
-				CED9D9611DA8364D00A70C2D /* fr */,
+				4521C986228199E700A30139 /* en */,
 			);
 			name = FacebookReactionLocalizable.strings;
 			sourceTree = "<group>";
@@ -648,7 +649,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.Reactions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -671,7 +672,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.Reactions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -689,7 +690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.ReactionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactionsExample.app/ReactionsExample";
 			};
 			name = Debug;
@@ -705,7 +706,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.ReactionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactionsExample.app/ReactionsExample";
 			};
 			name = Release;
@@ -766,6 +767,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -818,6 +820,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -833,7 +836,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.ReactionsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -847,7 +850,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.ReactionsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
