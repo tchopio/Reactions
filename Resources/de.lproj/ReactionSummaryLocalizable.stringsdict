@@ -29,11 +29,11 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>zero</key>
-			<string>Sie</string>
+			<string>Du</string>
 			<key>one</key>
-			<string>Sie und 1 andere(r)</string>
+			<string>Du und 1 andere(r)</string>
 			<key>other</key>
-			<string>Sie und %d andere</string>
+			<string>Du und %d andere</string>
 		</dict>
 	</dict>
 </dict>
