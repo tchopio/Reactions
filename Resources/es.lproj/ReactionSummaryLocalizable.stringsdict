@@ -31,7 +31,7 @@
 			<key>zero</key>
 			<string>Usted</string>
 			<key>one</key>
-			<string>Usted y otros 1</string>
+			<string>Usted y otro 1</string>
 			<key>other</key>
 			<string>Usted y otros %d</string>
 		</dict>
