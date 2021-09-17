@@ -24,22 +24,22 @@
  *
  */
 
-"like-template" = "Me gusta";
+"like-template" = "¡Bien!";
 
 /** Like reaction. */
-"like" = "Me gusta";
+"like" = "¡Bien!";
 
 /** Love reaction. */
 "love" = "Lo amo";
 
 /** Haha reaction. */
-"haha" = "Qué risa";
+"haha" = "¡Jajaja!";
 
 /** Wow reaction. */
-"wow" = "Qué sorpresa";
+"wow" = "!Oh!";
 
 /** Sad reaction. */
-"sad" = "Qué triste";
+"sad" = "¡Ayayay!";
 
 /** Angry reaction. */
-"angry" = "Me molesta";
+"angry" = "¡Grrrr!";
