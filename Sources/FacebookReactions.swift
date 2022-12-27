@@ -79,9 +79,11 @@ extension Reaction {
       case "like-template":
         color = .black
       case "like":
-        color = UIColor(red: 0.29, green: 0.54, blue: 0.95, alpha: 1)
+        //color = UIColor(red: 0.29, green: 0.54, blue: 0.95, alpha: 1)
+        color = UIColor(red: 255/255, green: 241/255, blue: 51/255, alpha: 1)
       case "love":
-        color = UIColor(red: 0.93, green: 0.23, blue: 0.33, alpha: 1)
+        //color = UIColor(red: 0.93, green: 0.23, blue: 0.33, alpha: 1)
+        color = UIColor(red: 145/255, green: 245/255, blue: 74/255, alpha: 1)
       case "angry":
         color = UIColor(red: 0.96, green: 0.37, blue: 0.34, alpha: 1)
       default:
