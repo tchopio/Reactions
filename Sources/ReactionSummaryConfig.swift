@@ -46,8 +46,7 @@ public final class ReactionSummaryConfig: Configurable {
   public var font: UIFont! = UIFont(name: "HelveticaNeue", size: 12)
 
   /// The color of the text.
-  public var textColor: UIColor! = UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)
-
+  public var textColor: UIColor! = reactionsAOKGreenColor//UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)    
   /**
    The technique to use for aligning the icon and the text.
 

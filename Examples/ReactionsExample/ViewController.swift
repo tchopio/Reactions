@@ -27,7 +27,7 @@ class ViewController: UIViewController, ReactionFeedbackDelegate {
         $0.iconMarging      = 8
         $0.spacing          = 4
         $0.font             = UIFont(name: "HelveticaNeue", size: 14)
-        $0.neutralTintColor = UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)
+        $0.neutralTintColor = reactionsAOKGreenColor//UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)
         $0.alignment        = .left
       }
 
@@ -42,7 +42,7 @@ class ViewController: UIViewController, ReactionFeedbackDelegate {
         $0.spacing      = 8
         $0.iconMarging  = 2
         $0.font         = UIFont(name: "HelveticaNeue", size: 12)
-        $0.textColor    = UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)
+        $0.textColor    = reactionsAOKGreenColor//UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)
         $0.alignment    = .left
         $0.isAggregated = true
       }

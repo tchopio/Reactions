@@ -75,7 +75,7 @@ struct Components {
     static func facebookLikeLabel() -> UILabel {
       return UILabel().build {
         $0.font          = UIFont(name: "HelveticaNeue", size: 16)
-        $0.textColor     = UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)
+        $0.textColor     = reactionsAOKGreenColor//UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)
       }
     }
   }

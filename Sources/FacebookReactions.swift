@@ -72,25 +72,30 @@ extension Reaction {
     // MARK: - Convenience Methods
 
     private static func reactionWithId(_ id: String) -> Reaction {
-      var color: UIColor            = .black
-      let icon: UIImage = imageWithName(id)
-
-      switch id {
-      case "like-template":
-        color = .black
-      case "like":
-        //color = UIColor(red: 0.29, green: 0.54, blue: 0.95, alpha: 1)
-        color = UIColor(red: 255/255, green: 241/255, blue: 51/255, alpha: 1)
-      case "love":
-        //color = UIColor(red: 0.93, green: 0.23, blue: 0.33, alpha: 1)
-        color = UIColor(red: 145/255, green: 245/255, blue: 74/255, alpha: 1)
-      case "angry":
-        color = UIColor(red: 0.96, green: 0.37, blue: 0.34, alpha: 1)
-      default:
-        color = UIColor(red: 0.99, green: 0.84, blue: 0.38, alpha: 1)
-      }
-
-      return Reaction(id: id, title: id.localized(from: "FacebookReactionLocalizable"), color: color, icon: icon, alternativeIcon: icon)
+        var color: UIColor            = .black
+        var icon: UIImage = imageWithName(id)
+        
+        let aokGreen = UIColor(red: 0/255, green: 94/255, blue: 63/255, alpha: 1)
+        color = aokGreen
+        switch id {
+        case "like-template":
+            //color = .black
+            if #available(iOS 13.0, *) {
+                icon = icon.withTintColor(color)
+            }
+//        case "like":
+//            //color = UIColor(red: 0.29, green: 0.54, blue: 0.95, alpha: 1)
+//            color = UIColor(red: 255/255, green: 241/255, blue: 51/255, alpha: 1)
+//        case "love":
+//            //color = UIColor(red: 0.93, green: 0.23, blue: 0.33, alpha: 1)
+//            color = UIColor(red: 145/255, green: 245/255, blue: 74/255, alpha: 1)
+//        case "angry":
+//            color = UIColor(red: 0.96, green: 0.37, blue: 0.34, alpha: 1)
+        default:
+            color = aokGreen //UIColor(red: 0.99, green: 0.84, blue: 0.38, alpha: 1)
+        }
+        
+        return Reaction(id: id, title: id.localized(from: "FacebookReactionLocalizable"), color: color, icon: icon, alternativeIcon: icon)
     }
 
     private static func imageWithName(_ name: String) -> UIImage {

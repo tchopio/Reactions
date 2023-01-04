@@ -25,6 +25,7 @@
  */
 
 import Foundation
+import UIKit
 
 extension Sequence where Iterator.Element: Hashable {
   /// Returns uniq elements in the sequence by keeping the order.

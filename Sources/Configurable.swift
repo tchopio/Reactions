@@ -25,6 +25,9 @@
  */
 
 import Foundation
+import UIKit
+
+let reactionsAOKGreenColor = UIColor(red: 0/255, green: 94/255, blue: 63/255, alpha: 1)//UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)
 
 /// Protocol to create a config object.
 protocol Configurable {
