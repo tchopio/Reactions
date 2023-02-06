@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "Thumb-Upped@3x 2.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "Thumb-Upped@3x 1.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "Thumb-Upped@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "Thumb-Upped.svg",
+      "idiom" : "universal"
     }
   ],
   "info" : {
