@@ -75,12 +75,11 @@ extension Reaction {
     // MARK: - Convenience Methods
 
     private static func reactionWithId(_ id: String) -> Reaction {
-      var color: UIColor            = .black
+      var color: UIColor            = defColor
       let icon: UIImage = imageWithName(id)
 
       switch id {
       case "like-template":
-        //color = .black
         color = defColor
       case "like":
         color = UIColor(red: 0.29, green: 0.54, blue: 0.95, alpha: 1)
