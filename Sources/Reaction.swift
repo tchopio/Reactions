@@ -39,7 +39,7 @@ public struct Reaction {
   public let title: String
 
   /// The reaction's color.
-  public let color: UIColor
+    public var color: UIColor
 
   /// The reaction's icon image.
   public let icon: UIImage
