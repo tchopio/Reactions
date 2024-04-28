@@ -83,20 +83,20 @@ extension Reaction {
     // MARK: - Convenience Methods
 
     private static func reactionWithId(_ id: String) -> Reaction {
-      var color: UIColor            = defColor
+      var color: UIColor            = emptyColor
       let icon: UIImage = imageWithName(id)
 
       switch id {
       case "like-template":
-        color = defColor
+        color = emptyColor
       case "like":
-        color = UIColor(red: 0.29, green: 0.54, blue: 0.95, alpha: 1)
+        color = likeColor
       case "love":
-        color = UIColor(red: 0.93, green: 0.23, blue: 0.33, alpha: 1)
+        color = loveColor
       case "angry":
-        color = UIColor(red: 0.96, green: 0.37, blue: 0.34, alpha: 1)
+        color = angryColor
       default:
-        color = UIColor(red: 0.99, green: 0.84, blue: 0.38, alpha: 1)
+        color = defColor
       }
 
       return Reaction(id: id, title: id.localized(from: "FacebookReactionLocalizable"), color: color, icon: icon, alternativeIcon: icon)
