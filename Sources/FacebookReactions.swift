@@ -66,8 +66,16 @@ extension Reaction {
       return reactionWithId("angry")
     }
       
+    /// Set color for empty reaction
+    public static var emptyColor: UIColor = .black
     /// Set color for default reaction
-    public static var defColor: UIColor = .black
+    public static var defColor: UIColor = UIColor(red: 0.99, green: 0.84, blue: 0.38, alpha: 1)
+    /// Set color for like reaction
+    public static var likeColor: UIColor = UIColor(red: 0.29, green: 0.54, blue: 0.95, alpha: 1)
+    /// Set color for love reaction
+    public static var loveColor: UIColor = UIColor(red: 0.93, green: 0.23, blue: 0.33, alpha: 1)
+    /// Set color for angry reaction
+    public static var angryColor: UIColor = UIColor(red: 0.96, green: 0.37, blue: 0.34, alpha: 1)
 
     /// The list of standard facebook reactions in this order: `.like`, `.love`, `.haha`, `.wow`, `.sad`, `.angry`.
     public static let all: [Reaction] = [facebook.like, facebook.love, facebook.haha, facebook.wow, facebook.sad, facebook.angry]
