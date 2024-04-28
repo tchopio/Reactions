@@ -35,7 +35,7 @@ import UIKit
  */
 public final class ReactionButton: UIReactionControl {
   private let iconImageView: UIImageView = Components.reactionButton.facebookLikeIcon()
-  private let titleLabel: UILabel        = Components.reactionButton.facebookLikeLabel()
+  let titleLabel: UILabel        = Components.reactionButton.facebookLikeLabel()
   private lazy var overlay: UIView       = UIView().build {
     $0.clipsToBounds   = false
     $0.backgroundColor = .clear
