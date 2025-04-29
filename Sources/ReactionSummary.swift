@@ -108,8 +108,10 @@ public final class ReactionSummary: UIReactionControl {
     }
     
     private func localizeGermanLanguage(_ initialText: String) -> String {
-        if let formalGermanNeeded = ReactionSummary.isFormalGermanLanguageType, formalGermanNeeded {
-            return initialText.replacingOccurrences(of: "Sie", with: "Du")
+        if let isFormalGermanLanguageTypeSet = ReactionSummary.isFormalGermanLanguageType {
+            if !isFormalGermanLanguageTypeSet {
+                return initialText.replacingOccurrences(of: "Sie", with: "Du") // Owerwrite with informal "Du"
+            }
         }
         return initialText
     }
