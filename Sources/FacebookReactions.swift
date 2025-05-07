@@ -107,9 +107,34 @@ extension Reaction {
         
         return Reaction(id: id, title: id.localized(from: "FacebookReactionLocalizable"), color: color, icon: icon, alternativeIcon: icon)
     }
-
-    private static func imageWithName(_ name: String) -> UIImage {
-      return UIImage(named: name, in: .reactionsBundle(), compatibleWith: nil)!
-    }
+      
+      private static func imageWithName(_ name: String) -> UIImage {
+          if let cached = _imageWithNameCache[name] {
+              return cached
+          }
+          
+          let insets = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4) // Original images did not have outter spacing
+          let image = UIImage(named: name, in: .reactionsBundle(), compatibleWith: nil)!._reactions_imageWithInsets(insets: insets)!
+          _imageWithNameCache[name] = image
+          return image
+      }
+      
+      /// Cache loaded images
+      private static var _imageWithNameCache = [String: UIImage]()
+      
   }
+}
+
+private extension UIImage {
+    func _reactions_imageWithInsets(insets: UIEdgeInsets) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(
+            CGSize(width: self.size.width + insets.left + insets.right,
+                   height: self.size.height + insets.top + insets.bottom), false, self.scale)
+        let _ = UIGraphicsGetCurrentContext()
+        let origin = CGPoint(x: insets.left, y: insets.top)
+        self.draw(at: origin)
+        let imageWithInsets = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return imageWithInsets
+    }
 }
