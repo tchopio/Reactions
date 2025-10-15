@@ -137,7 +137,7 @@ public final class ReactionButton: UIReactionControl {
 //      self.iconImageView.tintColor = self.reaction.color : self.config.neutralTintColor
 //      self.titleLabel.textColor    = self.reaction.color : self.config.neutralTintColor
 //      }, completion: nil)
-    
+    self.tintAdjustmentMode = .normal
     self.iconImageView.contentMode = .scaleAspectFit
     self.iconImageView.tintColor = self.reaction.color
     self.titleLabel.textColor    = self.reaction.color
